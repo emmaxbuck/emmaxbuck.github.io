@@ -19,6 +19,7 @@ font-size:55px;
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 15.4px;
+color:black
 }
 p {
 font-size:50px;
@@ -31,11 +32,10 @@ a {
 text-decoration:none;
 color:black;
 }
-
 </style>
 </head>
 <body>
-<div style="width:100%;border-top-style:solid;border-top-color:black;border-bottom-style:solid;border-bottom-color:black;">
+<div style="height:20%;width:100%;border-top-style:solid;border-top-color:black;border-bottom-style:solid;border-bottom-color:black;">
 <b>
 <h1 style="text-align:center;">
 :: Emma Buck Photography ::
@@ -44,19 +44,25 @@ color:black;
 </div>
 <div style="width:100%;border-top-style:solid;border-top-color:black;border-bottom-style:solid;border-bottom-color:black;">
 <div style="width:33%;float:left;">
-<h2 onclick="cd()" style="text-align:center;">
+<a href="index.html">
+<h2 style="text-align:center;">
 Gallery
 </h2>
+</a>
 </div>
 <div style="width:33%;float:left;">
-<h2 onclick="about()" style="text-align:center;" >
+<a href="about.html">
+<h2 style="text-align:center;" >
 About
 </h2>
+</a>
 </div>
 <div style="width:33%;float:left;">
-<h2 onclick="hire()" style="text-align:center;">
-Hire Me
+<a href="mailto:embuckie@gmail.com">
+<h2 style="text-align:center;">
+Contact
 </h2>
+</a>
 </div>
 </div>
 <div id="wide">
@@ -180,43 +186,6 @@ Hire Me
 <img src="i21.png" style="width:115%;">
 </div>
 </div>
-<div id="d1" style="position:absolute; top:15%;left:1%;width:98%;padding:10px;background-color:rgba(255, 255, 255, 0.9);height:150%; opacity:0;">
-<u>
-<h2>
-About
-</h2>
-</u>
-<p>
-Emma Buck Anderson is a talented young photographer in Albuquerque New Mexico.
-</p>
-<img src="emma.png" style="display:block;margin-left:auto;margin-right:auto;">
-</div>
-<div id="d2" style="position:absolute; top:25%;left:1%;width:98%;padding:10px;background-color:rgba(255, 255, 255, 0.9);height:150%; opacity:0;">
-<u>
-<a href="mailto:">
-<h2>
-Hire Me
-</h2>
-</a>
-</u>
-<p>
-Want professional, unique photos? Then you've come to the right place. Let's shoot today!
-</p>
-<u>
-<h2>
-Pricing 
-</h2>
-</u>
-<p>
-Senior Photos........$
-<br>
-Family Portraits.....$
-</p>
-<u>
-<h2>
-Set up an Appointment
-</h2>
-</div>
 <script>
 if (screen.width>screen.height) {
 document.getElementById('wide').style.display ='block';
@@ -224,22 +193,6 @@ document.getElementById('tall').style.display ='none';
 } else {
 document.getElementById('tall').style.display ='block';
 document.getElementById('wide').style.display ='none';
-}
-cd();
-function cd() {
-document.getElementById('d1').style.opacity  = '0';
-document.getElementById('d2').style.opacity = '0';
-document.getElementById('d3').style.opacity = '0';
-}
-function hire() {
-document.getElementById('d1').style.opacity  = '0';
-document.getElementById('d2').style.opacity = '1';
-document.getElementById('d3').style.opacity = '0';
-}
-function about() {
-document.getElementById('d1').style.opacity  = '1';
-document.getElementById('d2').style.opacity = '0';
-document.getElementById('d3').style.opacity = '0';
 }
 </script>
 </body>
